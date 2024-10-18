@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <title>Listas</title>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            header, nav, main, footer {
+                width: 100%;
+                color: #ef5a6f;
+                padding: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+            header{
+                /*width: 1280 px;*/
+                height: auto;
+                background-color: #ef5a6f;
+            }
+            h1{
+                color: #fff1db;
+                text-align: center;
+                font-family:"Bebas Neue", sans-serif;
+                font-size:55px;
+            }
+            nav {
+                background-color: #fff1db;
+                color: #536493;
+                height:auto;
+                font-family: "Lato", sans-serif;
+                font-size: 14px;
+                    
+            }
+            main {
+                background-color: #536493;
+            }
+            footer {
+                background-color: #fff1db;
+                height: 30px;
+            }
+            nav ul{
+                list-style-type: none;
+                text-align: center;
+            }
+            nav ul li{
+                background-color: azure;
+                margin-bottom: 10px;
+                padding: 10px;
+                width: auto;
+                text-align: center;
+                border-width: 2px;
+                border-color: #536493;
+                border-style: solid;
+                display: inline-block;
+                
+            }
+            section{
+                width: 70%;
+                background-color: #fff1db;
+                color: #536493;
+                margin-bottom: 40px;
+                margin-top: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 50px;
+                font-family: "Lato", sans-serif;
+                font-size: 14px;
+            }
+            h2{
+                color: #ef5a6f;
+                margin-bottom: 20px;
+                font-family:"Fredoka", sans-serif;
+                font-size:30px;
+            }
+            dt{
+                color: #ef5a6f;
+                text-decoration: underline;
+                margin-top: 15px;
+            }
+            h5{
+                text-align: center;
+                font-family:"Lato", sans-serif;
+                font-size:12px;
+            }
+            ul,ol{
+                padding-left: 20px;
+                margin-bottom: 15px;
+            }
+            dd{
+                margin-top: 12px;
+                padding: 15px;
+            }
+            a{
+                text-decoration: none;
+             }
+            nav ul li a{
+                 color: #536493;
+             }
+            nav ul li:hover{
+                background-color: cornflowerblue;
+                border-color: #536493;
+                width: 80px;
+             }
+             nav ul li a:hover{
+                 color:beige;
+                 font-weight: bold;
+             }
+            main nav{
+                width: 680px;
+                background-color: transparent;
+             }
+            main nav ul li{
+                width: 150px;
+                background-color: #ef5a6f;
+            }
+            main nav ul li a{
+                color:aliceblue;
+            }
+            main nav ul li:hover{
+                width: 155px;
+                background-color: #fff1db;
+            }
+            main nav ul li a:hover{
+                color:#536493;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Listas</h1>
+        </header>
+        <nav>
+             <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html1/listasatributos.html">Listas</a></li>
+                <li><a href="..//html1/tablas.html">Tablas</a></li>
+                <li><a href="..//html1/enlaces1.html">Enlaces</a></li>
+                <li><a href="..//html1/imagenes.html">Imágenes</a></li>
+                <li><a href="..//html1/audio1.html">Audio</a></li>
+                <li><a href="..//html1/video.html">Video</a></li>
+                <li><a href="..//html1/formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2 id="l_ordenada">Mis amigos - Lista ordenada</h2>
+                <ol type=a>
+                    <li>Brenda Mayté Portilla</li>
+                    <li>Rebeca Martínez</li>
+                    <li>Mariana Cabañas</li>
+                    <li>Brenda Victoria de Servicio</li>
+                    <li>Marco Antonio Vázquez</li>
+                </ol>
+            </section>
+            <section>
+                <h2 id="l_desordenada">Mis frutas favoritas - Lista desordenada</h2>
+                <ul>
+                    <li>Arándano</li>
+                    <li>Mandarina</li>
+                    <li>Frambuesa</li>
+                    <li>Fresa</li>
+                    <li>Uva</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="l_mixta">Lugares que me interesan - Lista Mixta</h2>
+                <ol type=i>
+                    <li>México</li>
+                        <ul>
+                            <li>Puebla</li>
+                                <ul>
+                                    <li>San Andrés Cholula</li>
+                                    <li>Calpan</li>
+                                    <li>Atlixco</li>
+                                    <li>San Miguel Xoxtla</li>
+                                    <li>Tehuacán</li>
+                                </ul>
+                            <li>Jalisco</li>
+                                <ul>
+                                    <li>Zapotlán El Grande</li>
+                                    <li>Chapala</li>
+                                    <li>San Diego de Alejandría</li>
+                                    <li>Tecolotlán</li>
+                                    <li>Zapotlanejo</li>
+                                </ul>
+                            <li>Nuevo León</li>
+                                <ul>
+                                    <li>San Nicolás de los Garza</li>
+                                    <li>Monterrey</li>
+                                    <li>Linares</li>
+                                    <li>Juárez</li>
+                                    <li>El Carmen</li>
+                                </ul>
+                            <li>Tlaxcala</li>
+                                <ul>
+                                    <li>Apizaco</li>
+                                    <li>Natívitas</li>
+                                    <li>Tlaxco</li>
+                                    <li>Lázaro Cardenas</li>
+                                    <li>Huamantla</li>
+                                </ul>
+                            <li>San Luis Potosí</li>
+                                <ul>
+                                    <li>Alaquines</li>
+                                    <li>Huehuetlán</li>
+                                    <li>Lagunillas</li>
+                                    <li>Rayón</li>
+                                    <li>Salinas</li>
+                                </ul>
+                        </ul>
+                    <li>Seychelles</li>
+                        <ul>
+                            <li>Mahé</li>
+                            <li>Praslin</li>
+                            <li>Silhouette</li>
+                            <li>La Digue</li>
+                            <li>Curieuse</li>
+                        </ul>
+                    <li>Puerto Rico</li>
+                        <ul>
+                            <li>Aguas Buenas</li>
+                            <li>Fajardo</li>
+                            <li>Loíza</li>
+                            <li>Toa Alta</li>
+                            <li>Toa Baja</li>
+                        </ul>
+                    <li>Suiza</li>
+                        <ul>
+                            <li>Zúrich</li>
+                            <li>Obwald</li>
+                            <li>Soleura</li>
+                            <li>Vaud</li>
+                            <li>Ginebra</li>
+                        </ul>
+                    <li>Líbano</li>
+                        <ul>
+                            <li>Beirut</li>
+                            <li>Akkar</li>
+                            <li>Bekaa</li>
+                            <li>Nabatiyeh</li>
+                            <li>Baalbek-Hermel</li>
+                        </ul>
+                    <li>Tailandia
+                        <ul>
+                            <li>Buri Ram</li>
+                            <li>Chiang Rai</li>
+                            <li>Chiang Mai</li>
+                            <li>Nong Khai</li>
+                            <li>Surat Thani</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h2 id="conceptos_descripciones">Citas de libro - Lista de conceptos y descripciones</h2>
+                <dl>
+                    <dt>Nuestra Señora de París - Capítulo III Libro II</dt>
+                    <dd>"Si hubiera tenido el Perú en su bolsillo, es seguro que se lo hubiera dado a la bailarina, pero Gringoire no tenía el Perú, y además, aún no se había descubierto la América".</dd>
+                    <dt>Ama y no sufras</dt>
+                    <dd>"<i>Eros</i> es un hecho tan real y concreto como el aire que respiramos: negarlo es una estupidez, prenderle velas, también".</dd>
+                    <dt>Middlemarch</dt>
+                    <dd>"Al señor Casaubon le embargó un gozo desconocido (¿a qué hombre no?) ante este irrefrenado ardor juvenil: no le sorprendió (¿a qué novio sí?) ser el destinatario".</dd>
+                </dl>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#l_ordenada">Lista ordenada </a></li>
+                    <li><a href="#l_desordenada">Lista desordenada</a></li>
+                    <li><a href="#l_mixta">Lista mixta</a></li>
+                    <li><a href="#conceptos_descripciones">Lista de conceptos  descripciones</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <h5>Elaborado por Evelyn Hernández Meléndez</h5>
+        </footer>
+    </body>
+</html>

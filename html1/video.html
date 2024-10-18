@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Vídeo en html</title>
+        <link rel="stylesheet" href="../css1/style.page.css" type="text/css">
+        <style type="text/css">
+            header, nav, main, footer{
+                width: 100%;
+            }
+            video{
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: 0;
+                
+            }
+            section{
+                display:inline-block;
+                height: auto;
+                width: 40%;
+                margin: 10px;
+            }
+            main{
+                text-align: center;
+            }
+            iframe{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Vídeo</h1>
+        </header>
+        <nav>
+             <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html1/listasatributos.html">Listas</a></li>
+                <li><a href="..//html1/tablas.html">Tablas</a></li>
+                <li><a href="..//html1/enlaces1.html">Enlaces</a></li>
+                <li><a href="..//html1/imagenes.html">Imágenes</a></li>
+                <li><a href="..//html1/audio1.html">Audio</a></li>
+                <li><a href="..//html1/video.html">Video</a></li>
+                <li><a href="..//html1/formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>El robo de la Mona Lisa</h2>
+                <p> En 1911, Vincenzo Peruggia robó la Mona Lisa del Louvre para devolverla a Italia. Fue recuperada dos años después, oculta en su apartamento hasta que intentó venderla.
+                </p>
+                <video loop autoplay muted>
+                    <source src="../multimedia/video1/video1.mp4" type="video/mp4">
+                    El navegador no soporta este vídeo.
+                </video>
+            </section>
+            <section>
+                <h2>El misterio del Doble de Venecia</h2>
+                <p>En el Museo Correr, un retrato del siglo XVI muestra a un hombre con dos caras. Según la leyenda, hizo un pacto con el diablo, ganando visión completa pero perdiendo la cordura. 
+                </p>
+                <video controls autoplay muted>
+                    <source src="../multimedia/video1/video2.mp4" type="video/mp4">
+                    El navegador no soporta este vídeo.
+                </video>
+            </section>
+            <section>
+                <h2>El Misterio del Museo Británico</h2>
+                <p> En 1845, una momia del Museo Británico supuestamente causó extraños accidentes y fenómenos paranormales.Se decía que los trabajadores del museo escuchaban ruidos extraños y veían sombras en la sala donde estaba la momia. A pesar de que estas historias se han desmentido, la leyenda persiste y agrega un aire de misterio al museo. 
+                </p>
+                <h3>Vídeo póster</h3>
+                <video controls poster="../multimedia/imagenes1/poster.jpg">
+                    <source src="../multimedia/video1/video3.mp4" type="video/mp4">
+                    El navegador no soporta este vídeo.
+                </video>
+            </section>
+            <section>
+                <h2>Museos y otras cosas...</h2>
+                <p> Los museos son instituciones culturales muy queridas, con más de 850 millones de visitas cada año solo en los Estados Unidos. Pero entre bastidores, se está librando una guerra: muchas culturas quieren que su patrimonio vuelva a su lugar de origen.  <br>Tedx Talks en <i>YouTube</i>
+                </p>
+                 <h3>Vídeo de repositorio</h3>
+                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/DJYS9C06_qY?si=m-xVois-zYusTLf2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+            </section>
+            <section>
+                <h2>Pillow - Horacio Reyes Páez en Vimeo</h2>
+                <p> Pillow cuenta las vivencias de un señor de 65 años durante la pandemia de 2021 y cómo un elemento utilitario como una almohada, pasa a ser su nexo con el mundo de los sueños, su amiga en momentos de Covid19. La almohada se personifica, se torna viva. <br><br><a href="https://www.larevistadelsiglo.com/peliculas/pillow-de-horacio-reyes-paez-ganadora-del-primer-premio-al-corto-ficcion-del-jiiff-uruguay/"target="_blank">María Cabeza en <i>La Revista del Siglo</i></a>
+                </p>
+                <h3>Vídeo incrustado</h3>
+                <div style="padding:41.85% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/494505269?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Pillow"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </section>
+        </main>
+        <footer>
+             <h5>Elaborado por Evelyn Hernández Meléndez</h5>
+        </footer>
+    </body>
+</html>

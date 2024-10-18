@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios en HTML</title>
+<link href="../css1/style.page.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		form{
+			height: auto;
+			width: 80%;
+			padding: 30px;
+			background-color:chocolate;
+			color:#f7f1e1;
+			margin: 0 auto;
+		}
+		label, input{
+			display: block;
+			margin-left: 10px;
+		}
+		label{
+			padding-bottom:10px;
+			padding-top:10px;
+		}
+		input[type=text], input[type=password]{
+			width:100%;
+			color:chocolate;
+			padding: 7px;
+			font-weight: bold;
+			border-style: none;
+			border-radius: 5px;
+			
+		}
+		input[type=submit], input[type=reset]{
+			width:70px;
+			height:25px;
+			background-color:#f7f1e1;
+			font-family: "Lato", sans-serif;
+			margin:20px auto;
+			border-radius: 8px;
+			font-weight: bold;
+			border-style: none;
+
+		}
+		input[type=text], input[type=password]:focus{
+			background-color: #FBF7DB;
+			border-style: none;
+		}
+		input[type=number]{
+			background-color:#f7f1e1;
+			width:100%;
+			}
+		select{
+			background-color:#f7f1e1;
+			width:100%;
+			display: block;
+			margin-left: 10px;
+			}
+        textarea{
+            width: 100%;
+            display:block;
+            margin-left: 10px;
+            background-color:#f7f1e1;
+            border-radius: 5px;
+        }
+        input[type=date], input[type=month]{
+            width: 100%;
+            display:block;
+        }
+	</style>
+</head>
+<body>
+<header><h1>Formularios en HTML</h1></header>
+<nav>
+	 <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html1/listasatributos.html">Listas</a></li>
+                <li><a href="..//html1/tablas.html">Tablas</a></li>
+                <li><a href="..//html1/enlaces1.html">Enlaces</a></li>
+                <li><a href="..//html1/imagenes.html">Imágenes</a></li>
+                <li><a href="..//html1/audio1.html">Audio</a></li>
+                <li><a href="..//html1/video.html">Video</a></li>
+                <li><a href="..//html1/formularios.html">Formularios</a></li>
+            </ul>
+</nav>
+<main>
+  <section>
+    <h2 id="f1">Formulario 1</h2>
+    <p></p>
+	  <form action="../html/formularios.html" method="get">
+		  <label id="">Nombre</label>
+		  <input type="text" id="nombre" name="nombre">
+		  <label id="">Contraseña</label>
+		  <input type="password" name="contrasena">
+		  <input type="submit" value="Enviar">
+	  </form>
+  </section>
+<section>
+    <h2 id="f2">Formulario 2</h2>
+    <p></p>
+	<form id="form1" name="form1" method="post">
+    	<label for="nombre1">Nombre</label>
+		<input type="text" name="nombre1" id="nombre1">
+		<label for="edad">Edad</label>
+		<input type="number" name="edad" id="edad" min="18" max="85">
+		<label for="select">Selecciona tu estado</label>
+		<select name="estado" id="estado">
+			<option value="Aguascalientes">Aguascalientes</option>
+			<option value="Colima">Colima</option>
+			<option value="Guadalajara">Guadalajara</option>
+			<option value="Oaxaca">Oaxaca</option>
+			<option value="Puebla">Puebla</option>
+			<option value="San Luis Potosí">San Luis Potosí</option>
+	</select>
+	<input type="submit" value="Enviar">
+	</form>
+  </section>
+  <section>
+    <h2 id="cx">Formulario Checkbox</h2>
+    <p>Fue en este cuestionario que descubrí la propiedad display: ruby, aún no estoy del todo familiarizada con ella pero también averigué muchas cosas interesantes sobre codificación preguntándole a Copilot.</p>
+    <form id="form2" name="form2" method="post">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="textfield" id="textfield">
+      <label for= "genero">Género</label>
+	  <table width="200" style="margin: 0 auto;">
+        <tr>
+          <td style="text-align: center"><label>Femenino</label></td>
+			<td><input type="radio" name="genero" value="opción" id="genero_0"></td>
+        </tr>
+        <tr>
+          <td style="text-align: center"><label>Masculino</label></td>
+            <td><input type="radio" name="genero" value="opción" id="genero_1"></td>   
+        </tr>
+        <tr>
+          <td style="text-align: center"><label>Otro</label></td>
+            <td><input type="radio" name="genero" value="opción" id="genero_2"></td> 
+        </tr>
+      </table>
+	  <label for="musica">¿Cuál es tu género musical favorito?</label>
+		<p style="display:ruby; color:#f7f1e1;">
+		  <label>Clásica</label><input type="checkbox" name="musica" value="casilla de verificación " id="musica_0">
+		  <br>
+		  <label>Pop</label><input type="checkbox" name="musica" value="casilla de verificación " id="musica_1">
+		  <br>
+		  <label>Jazz</label><input type="checkbox" name="musica" value="casilla de verificación " id="musica_2">
+		  <br>
+		  <label>Rock</label><input type="checkbox" name="musica" value="casilla de verificación " id="musica_3">
+		  <br>
+		  <label>Latina</label><input type="checkbox" name="musica" value="casilla de verificación " id="musica_4">
+		  <br>
+	  </p>
+<input type="submit" value="Enviar">
+    </form>
+  </section>
+<section>
+    <h2 id="cu">Cuestionario Historia de México: El Imperio de Maximiliano de Habsburgo</h2>
+    <p>Decidí hacer este cuestionario porque justamente en Historia de la Educación estábamos viendo los últimos años de la Guerra de Reforma, y aparecía Maximiliano como n personaje interesante.</p>
+    <form action="../html/formularios.html" method="get">
+        <label id="">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <label id="">Apellidos</label>
+		<input type="text" id="apellido" name="apellido">
+        <label id="">1. ¿Qué sucesos anteceden al Imperio? <i>Menciona por lo menos 3.</i> </label>
+        <textarea name="1" rows="3" cols="6">
+        </textarea>
+        <label id="">2. El 10 de ____ de ____ Maximiliano firma el Tratado de Miramar.</label>
+        <input type="month" id="abril" name="abril" min="1860-01" max="1870-01">
+        <label id="">3. ¿Cuándo llegaron los emperadores a la Ciudad de México?</label>
+        <input type="date" id="datemax" name="datemax" max="1870-01-01" min="1860-01-01">
+        <label id="">4. Maximiliano aplicó las Leyes de Reforma entre ellas: </label>
+        <table width="600" style="display:ruby;">
+        <tr>
+          <td><input type="radio" name="a)" value="opción" id="a)"></td><td><label>Desamortización de los bienes del clero y libertad de cultos.</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="b)" value="opción" id="b)"></td><td><label>Diversificación de la milicia y política y libertad de civilidad.</label></td>
+        </tr>
+      </table>
+        <label id="">5. Personajes en Europa que dieron la espalda al Imperio:</label>
+        <table width="400" style="display:ruby;">
+        <tr>
+          <td><input type="radio" name="a)1" value="opción" id="a)1"></td><td><label>Napoleón III y el Papa Pío IX</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="b)1" value="opción" id="b)1"></td><td><label>Margarita Lafragua y Almonte Mirada</label></td>
+        </tr>
+      </table>
+        <label id="">6. Los republicanos derrotaron a los imperialistas en:</label>
+        <table width="400" style="display:ruby;">
+        <tr>
+          <td><input type="radio" name="a)3" value="opción" id="a)3"></td><td><label>Miahuatlán y la Carbonera</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="b)3" value="opción" id="b)3"></td><td><label>Santa Cruz la Fe y San Luis Micena</label></td>
+        </tr>
+        </table>      
+        <label id="">7. Maximiliano, Miramón y Mejía se rindieron en:</label>
+        <table width="300" style="display:ruby;">
+        <tr>
+          <td><input type="radio" name="a)4" value="opción" id="a)4"></td><td><label>El Cerro de las Campanas</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="b)4" value="opción" id="b)4"></td><td><label>La Colina de Miramonte</label></td>
+        </tr>
+        </table>        
+        <label id="">8. Querétaro es tomado por las fuerzas juaristas el 15 de mayo de 186_</label>
+        <input type="number" name="mayo" id="mayo" min="0" max="9">
+        <label id="">9. ¿Por qué fracasó el imperio de Maximiliano de Habsburgo?</label>
+        <textarea name="10" rows="4" cols="8">
+        </textarea>
+        <label id="">10. Realiza una línea del tiempo con los sucesos más relevantes del Segundo Imperio y anéxala en PDF </label>
+        <input type="file" id="myfile" name="myfile">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+	  </form>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="#f1">Formulario 1 </a></li>
+            <li><a href="#f2">Formulario 2</a></li>
+            <li><a href="#cx">Checkbox</a></li>
+            <li><a href="#cu">Cuestionario</a></li>
+        </ul>
+    </nav>
+</main>
+<footer>
+  <h5>Elaborado por Evelyn HM</h5>
+</footer>
+</body>
+</html>

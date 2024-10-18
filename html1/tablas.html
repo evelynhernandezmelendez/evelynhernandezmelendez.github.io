@@ -1,0 +1,398 @@
+<html>
+    <head>
+        <title>Tablas en HTML</title>
+        <link rel="stylesheet" href="../css1/style.page.css" type= "text/css">
+        <style type="text/css">
+            #Tabla1{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color: black;
+                border-style: solid;
+                border-width: 3px;
+                border-color: aliceblue;
+            }
+            #Tabla1 th{
+                background-color: #ce7095;
+                color:#f7f1e1;
+                padding: 5px;
+            }
+            #Tabla1 td{
+                background-color: #f7f1e1;
+                color: #ce7095;
+                text-align: left;
+                border-radius: 6px;
+                border-style: solid;
+                border-color:#ffdbd7;
+                border-width: 1px;
+                margin: 10px; 
+                padding: 4px;
+            }
+            #Tabla2 th{
+                color: #f7f1e1;
+                background-color: #ce7095;
+                border-width: 1px;
+            }
+            #Tabla2 td{
+                color:#ce7095;
+                height: 30px;
+                padding: 10px;
+                border-width:1px;
+            }
+            #Tabla2{
+                width: 700px;
+                border-color: #855e6e;
+                border-collapse: collapse;
+                border-style: solid;
+                margin: 0 auto;
+            }
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                background-color: #ffdbd7;
+            }
+            .tabla_dos{
+                border-color: #855e6e;
+                border-width: 2px;
+                border-collapse: collapse;
+                border-style: solid;
+                margin: 0 auto;
+            }
+            .tabla_dos td{
+                width: 150px;
+                border-color: #855e6e;
+                padding: 10px;
+                border-style: dashed;
+            }
+            .tabla_dos th{
+                border-style: dashed;
+                border-color: #ffdbd7;
+            }
+            .tabla_dos td{
+                background-color:#f7f1e1; 
+            }
+            #TablaZebra{
+                width: 100%;
+                border-color: crimson;
+                border-width: 3px;
+                border-style: solid;
+                border-collapse: collapse;
+            }
+            #TablaZebra th{
+                border-style: solid;
+                border-width: 1px;
+                border-color: #f7f1e1;
+                padding:5px;
+            }
+            #TablaZebra tbody td{
+                padding: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: crimson;
+            }
+            #TablaZebra tbody tr:nth-child(even){
+                background-color: #ffdbd7;
+                color:darkblue;
+            }
+            #TablaZebra tbody tr:nth-child(odd){
+                background-color: #f7f1e1;
+                color: crimson;
+            }
+            #TablaZebra thead tr{
+                background-color: crimson;
+                color: #f7f1e1;
+            }
+            .tabla_hover{
+                width: 80%;
+                margin:0 auto;
+                border-style: solid;
+                border-color: aliceblue;
+                border-collapse: collapse;
+            }
+            .tabla_hover tbody tr{
+                background-color: #f7f1e1;
+                color: #855e6e;
+            }
+            .tabla_hover tbody td{
+                padding: 8px;
+            }
+            .tabla_hover thead th{
+                background-color: #ce7095;
+                color: #f7f1e1;
+                padding:5px;
+            }
+            .tabla_hover tbody tr:hover{
+                background-color: #ffdbd7;
+                color: #ce7095;
+                }
+            /*.tabla_hover th td{
+                border-style: dotted;
+                border-color: aliceblue;
+                border-width: 1px;
+            }*/
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tablas</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html1/listasatributos.html">Listas</a></li>
+                <li><a href="..//html1/tablas.html">Tablas</a></li>
+                <li><a href="..//html1/enlaces1.html">Enlaces</a></li>
+                <li><a href="..//html1/imagenes.html">Imágenes</a></li>
+                <li><a href="..//html1/audio1.html">Audio</a></li>
+                <li><a href="..//html1/video.html">Video</a></li>
+                <li><a href="..//html1/formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section style="overflow-x: auto;">
+                <h2 id="t1">Tabla Tipo 1</h2>
+                <p></p>
+                <table border="1" id="Tabla1">
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nombre</th>
+                            <th>Apellido paterno</th>
+                            <th>Apellido materno</th>
+                            <th>Colegio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202068487</td>
+                            <td>Evelyn</td>
+                            <td>Hernández</td>
+                            <td>Meléndez</td>
+                            <td>Diseño Gráfico</td>
+                        </tr>
+                        <tr>
+                            <td>202089167</td>
+                            <td>Brenda Mayté</td>
+                            <td>Portilla</td>
+                            <td>Hernández</td>
+                            <td>Diseño Gráfico</td>
+                        </tr>
+                        <tr>
+                            <td>202054407</td>
+                            <td>Lucía</td>
+                            <td>Plata</td>
+                            <td>del Río</td>
+                            <td>Urbanismo</td>
+                        </tr>
+                        <tr>
+                            <td>202035477</td>
+                            <td>Carlos</td>
+                            <td>García</td>
+                            <td>Altamirano</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202099467</td>
+                            <td>Gabriela</td>
+                            <td>Ramírez</td>
+                            <td>Macuitl</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2 id="t2">Tabla Tipo 2</h2>
+                <p></p>
+                <table id="Tabla2" class="tabla_dos">
+                    <thead>
+                        <tr>
+                            <th style="width: 200px;">Nombre</th>
+                            <th style="width: 125px;">Edad</th>
+                            <th style="width: 175px;" colspan="2">Teléfono</th>
+                            <th style="width: 200px;">Cooperación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mayté Portilla</td>
+                            <td style="text-align: center; padding: 0px;">22</td>
+                            <td>2223456789</td>
+                            <td>2223456789</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$100</td>
+                        </tr>
+                        <tr>
+                            <td>Evelyn Hernández</td>
+                            <td style="text-align: center; padding: 0px;">22</td>
+                            <td>2229086516</td>
+                            <td>2223456789</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$75</td>
+                        </tr>
+                        <tr>
+                            <td>Carmen Hinojosa</td>
+                            <td style="text-align: center; padding: 0px;">21</td>
+                            <td>2221346789</td>
+                            <td>2223456789</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$50</td>
+                        </tr>
+                        <tr>
+                            <td>Azure Vázquez </td>
+                            <td style="text-align: center; padding: 0px;">19</td>
+                            <td>2227899007</td>
+                            <td>2223456789</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$100</td>
+                        </tr>
+                        <tr>
+                            <td>Paulina de la Mora</td>
+                            <td style="text-align: center; padding: 0px;">22</td>
+                            <td>2221566457</td>
+                            <td>2223456789</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$100</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Total</td>
+                        <td class="celda_centrada" style="background-color: #ce7095; color: white;">$425</td>
+                    </tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2 id="tz">Tabla Zebra</h2>
+                <p>Fue con esta tabla que descubrí la paleta de color que apliqué en el CSS, me encantó el contraste asi que se quedó.</p>
+                <table id="TablaZebra">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>María Salamanca Lucio</td>
+                            <td>19</td>
+                            <td>Football</td>
+                            <td>2223456778</td>
+                            <td>ma.salamanca@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Luis Pérez Domínguez</td>
+                            <td>22</td>
+                            <td>Voleiball</td>
+                            <td>2224455667</td>
+                            <td>luis.perdom@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Daniela Vázquez Tamariz</td>
+                            <td>21</td>
+                            <td>Baseball</td>
+                            <td>2221344679</td>
+                            <td>daniela.vt@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Cardan Dayner Hernández</td>
+                            <td>23</td>
+                            <td>Football</td>
+                            <td>2225567901</td>
+                            <td>cardan.dayh@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Sofía de la Luz Vázquez</td>
+                            <td>21</td>
+                            <td>Voleiball</td>
+                            <td>2221789009</td>
+                            <td>sof.dllv@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>David Hernández González</td>
+                            <td>19</td>
+                            <td>Natación</td>
+                            <td>2227648933</td>
+                            <td>david.hg@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2 id="tho">Tabla Hover</h2>
+                <p> Descubrí en este ejercicio que podía inventar nombres mucho más rápido de lo que pensaba, ahora tengo varios que podría utilizar después. 
+                </p>
+                <table id="" class="tabla_hover">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>María Salamanca Lucio</td>
+                            <td>19</td>
+                            <td>Football</td>
+                            <td>2223456778</td>
+                            <td>ma.salamanca@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Luis Pérez Domínguez</td>
+                            <td>22</td>
+                            <td>Voleiball</td>
+                            <td>2224455667</td>
+                            <td>luis.perdom@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Daniela Vázquez Tamariz</td>
+                            <td>21</td>
+                            <td>Baseball</td>
+                            <td>2221344679</td>
+                            <td>daniela.vt@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Cardan Dayner Hernández</td>
+                            <td>23</td>
+                            <td>Football</td>
+                            <td>2225567901</td>
+                            <td>cardan.dayh@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Sofía de la Luz Vázquez</td>
+                            <td>21</td>
+                            <td>Voleiball</td>
+                            <td>2221789009</td>
+                            <td>sof.dllv@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>David Hernández González</td>
+                            <td>19</td>
+                            <td>Natación</td>
+                            <td>2227648933</td>
+                            <td>david.hg@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#t1">Tabla Tipo 1 </a></li>
+                    <li><a href="#t2">Tabla Tipo 2</a></li>
+                    <li><a href="#tz">Tabla Zebra</a></li>
+                    <li><a href="#tho">Tabla Hover</a></li>
+                </ul>
+            </nav>
+        </main>
+    </body>
+    <footer>
+        <h5>Elaborado por Evelyn Hernández Meléndez</h5>
+    </footer>
+</html>

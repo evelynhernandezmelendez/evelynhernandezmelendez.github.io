@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <title>Enlaces en html</title>
+         <style type="text/css">
+             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            header, nav, main, footer {
+                width: 100%;
+                color: #5a4e3c;
+                padding: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            header{
+                height: auto;
+                background-color: #d8e472;
+            }
+            h1{
+                color: #5a4e3c;
+                text-align: center;
+                font-family:"Bebas Neue", sans-serif;
+                font-size:55px;
+            }
+            h2{
+                font-family:"Fredoka", sans-serif;
+                font-size:30px;
+             }
+            h5{
+                font-family:"Lato", sans-serif;
+                font-size:12px;
+            }
+             nav{
+                 background-color: #418e8e;
+                 height: auto;
+                 font-family: "Lato", sans-serif;
+                 font-size: 14px;
+            }
+            main {
+                background-color: #c4d428;
+            }
+            footer {
+                background-color: #e9ebbf;
+                height: 30px;
+            }
+            nav ul{
+                list-style-type: none;
+                text-align: center;
+            }
+            nav ul li{
+                background-color: #e9ebbf;
+                color: teal;
+                margin-bottom: 10px;
+                padding: 10px;
+                width: auto;
+                text-align: center;
+                border-width: 2px;
+                border-color: darkslategray;
+                border-style: solid;
+                display: inline-block;
+            }
+            section{
+                width: 80%;
+                background-color: #d8e472;
+                color: black;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 30px;
+            }
+            h2{
+                color: darkblue;
+                margin-bottom: 20px;
+            }
+            h5{
+                text-align: center
+            }
+            /*ul {
+                padding-left: 20px;
+                margin-bottom: 15px;
+            }*/
+             a{
+                text-decoration: none;         
+             }
+             section a{
+                color:darkcyan;
+                text-decoration: none;
+                font-weight: bold;
+             }
+             section a:visited{
+                 color:blue;
+             }
+             section a:hover{
+                 color:darkgoldenrod;
+             }
+             nav ul li a{
+                 color: #5a4e3c;
+             }
+             nav ul li:hover{
+                 background-color: #5a4e3c;
+                 width: 80px;
+             }
+             nav ul li a:hover{
+                 color:#e9ebbf;
+                 font-weight: bold;
+             }
+             p{
+                margin-bottom: 20px;
+                font-family: "Lato", sans-serif;
+                font-size: 14px;
+             }
+             main nav{
+                width: 680px;
+                height: 20px;
+                color: #5a4e3c;
+                background-color: transparent;
+             }
+             main nav ul li a{
+                 color: #e9ebbf;
+             }
+             main nav ul li:hover{
+                 background-color: #e9ebbf;
+                 width: 90px;
+             }
+             main nav ul li a:hover{
+                 color:#5a4e3c;
+                 font-weight: bold;
+             }
+             main nav ul li{
+                 background-color: #5a4e3c;
+                 border-style: none;
+             }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Enlaces</h1>
+        </header>
+        <nav>
+             <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html1/listasatributos.html">Listas</a></li>
+                <li><a href="..//html1/tablas.html">Tablas</a></li>
+                <li><a href="..//html1/enlaces1.html">Enlaces</a></li>
+                <li><a href="..//html1/imagenes.html">Imágenes</a></li>
+                <li><a href="..//html1/audio1.html">Audio</a></li>
+                <li><a href="..//html1/video.html">Video</a></li>
+                <li><a href="..//html1/formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2 id="enlace_interno">Enlaces internos</h2>
+                <p>
+                    Aquí aprendimos a poner enlaces. Este es un enlace interno: <a href="../html/listasatributos.html">Listas</a>. Este es un enlace interno también pero se abre en una ventana: <a href="../index.html"target="_blank">Inicio</a>. Estos enlaces son útiles, pues con ellos podemos dirigirnos a diferentes páginas del sitio, mencionándolas en donde lo necesitemos, además de la barra de menú, y eso está padre.</p>
+            </section>
+            <section>
+                <h2 id="enlace_externo">Enlaces externos</h2>
+                <p>
+                    Aquí estamos poniendo enlaces externos, por ejemplo al canal de YouTube de una chica que cuenta casos de True Crime <a href="https://www.youtube.com/@DinosaurVlogs">DinosaurVlogs</a> O esta, que también se abre en una pestaña externa, es de la cuenta de Instagram de Crossbooks, una editorial que sigo <a href="https://www.instagram.com/crossbookslibros/"target="_blank">Crossbooks en Instagram</a>. Lo que es aún más interesante porque podemos llevar al usuario a otros sitios con más información, eso me gusta.  
+                </p>
+            </section>
+            <section>
+                <h2 id="enlace_archivo">Enlaces a archivos</h2>
+                <p>
+                    Y esto wow. Son enlaces a archivos que se alojan en el sitio. Por ejemplo este es el pdf del código de la página de Listas: <a href="../multimedia/pdf/listasatributos.html.pdf">Listas con atributos.</a> Y este el pdf con el código de Inicio, bueno antes de cambiarlo: <a href="../multimedia/pdf/Miprimerapaginaweb.pdf"target="_blank">Inicio</a> Ahora que lo pienso, seguramente así están configurados los sitios de internet en los que puedes bajar documentos en pdf.  
+                </p>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#enlace_externo">Enlaces externos</a></li>
+                    <li><a href="#enlace_interno">Enlaces internos</a></li>
+                    <li><a href="#enlace_archivo">Enlaces a archivos</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <h5>Elaborado por Evelyn Hernández Meléndez</h5>
+        </footer>
+    </body>
+</html>
